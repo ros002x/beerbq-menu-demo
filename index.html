@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2b160b">
+  <meta name="description" content="Il menu ufficiale di BeerBQ Nova Siri: carne, panini, ribs e birre.">
+  <title>BeerBQ Nova Siri — Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Sans:wght@400;500;600;700&family=Rye&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead" id="top">
+    <div class="topline">
+      <span>Nova Siri · Basilicata</span>
+      <a href="tel:+393338765432">Prenota · 333 876 5432</a>
+    </div>
+    <div class="brand-panel">
+      <p class="since">Carne · Birra · Compagnia</p>
+      <img class="logo" src="beerbq-logo.png" alt="BeerBQ, logo con toro e maialino">
+      <p class="welcome">La nostra tavola è semplice: carne fatta bene, birra fresca<br>e il tempo giusto per godersi la serata.</p>
+      <a class="down" href="#carta">Apri la carta <span>↓</span></a>
+    </div>
+  </header>
+
+  <main id="carta">
+    <div class="menu-shell">
+      <section class="menu-intro">
+        <span class="ornament">◆</span>
+        <p>Benvenuti da BeerBQ</p>
+        <h1>Il menu della<br><em>nostra taverna</em></h1>
+        <p class="intro-copy">Scegli una categoria. Noi pensiamo alla brace.</p>
+      </section>
+
+      <section class="food-showcase" aria-label="Le specialità BeerBQ">
+        <figure class="showcase-main"><img src="crudo-royale.jpg" alt="Panino Crudo Royale" loading="lazy"><figcaption><span>Panino del mese</span><b>Crudo Royale</b></figcaption></figure>
+        <figure><img src="pork-ribs.jpg" alt="Pork ribs BeerBQ" loading="lazy"><figcaption><span>Low & slow</span><b>Pork Ribs</b></figcaption></figure>
+        <figure><img src="bacon-crispy.jpg" alt="Bacon Crispy BeerBQ" loading="lazy"><figcaption><span>Special burger</span><b>Bacon Crispy</b></figcaption></figure>
+      </section>
+
+      <nav class="category-nav" id="indice" aria-label="Categorie del menu">
+        <a href="#novita">In evidenza</a>
+        <a href="#antipasti">Antipasti</a>
+        <a href="#panini">Panini</a>
+        <a href="#special">Special</a>
+        <a href="#ribs">Ribs</a>
+        <a href="#fritti">Fritti</a>
+        <a href="#dessert">Dessert</a>
+        <a href="#bevande">Bevande</a>
+      </nav>
+
+      <div class="sections">
+        <section class="menu-section" id="novita">
+          <header class="section-title"><span>La lavagna</span><h2>In evidenza</h2><i></i></header>
+          <article class="month-card">
+            <div class="month-copy"><span>Panino del mese</span><h3>Crudo Royale</h3><p>Salsa tartare, tartare di manzo, cetriolini e grana.</p></div>
+            <strong>14<small>€</small></strong>
+          </article>
+          <div class="highlights">
+            <article><span>Il nostro nome</span><h3>BeerBQ</h3><p>Hamburger, pulled pork, formaggio e salsa Alabama.</p><strong>12€</strong></article>
+            <article><span>Dal territorio</span><h3>Bacon Crispy 2.0</h3><p>Wagyu lucano 200 g, cheddar, bacon e salsa crispy.</p><strong>14€</strong></article>
+            <article><span>Cotto piano</span><h3>Pork Ribs</h3><p>Ribs di maiale con patatine fritte.</p><strong>15€</strong></article>
+          </div>
+        </section>
+
+        <section class="menu-section" id="antipasti">
+          <header class="section-title"><span>Per cominciare</span><h2>Antipasti</h2><i></i></header>
+          <figure class="section-photo photo-left"><img src="bombette.jpg" alt="Bombette BeerBQ" loading="lazy"><figcaption>Le nostre bombette</figcaption></figure>
+          <div class="menu-list" id="antipasti-list"></div>
+        </section>
+
+        <section class="menu-section" id="panini">
+          <header class="section-title"><span>I classici</span><h2>I nostri panini</h2><i></i></header>
+          <div class="notice">I panini non possono essere modificati. Vuoi scegliere tu? Chiedi il panino <strong>“Come vuoi tu”</strong>.</div>
+          <div class="menu-list" id="panini-list"></div>
+        </section>
+
+        <section class="menu-section" id="special">
+          <header class="section-title"><span>Quelli importanti</span><h2>Special burgers</h2><i></i></header>
+          <aside class="special-callout">
+            <span>Fuori dai soliti schemi</span>
+            <h3>Qui la carne<br>fa sul serio.</h3>
+            <p>Tagli scelti, frollature, cotture lente e abbinamenti decisi: sono i panini che raccontano meglio BeerBQ.</p>
+          </aside>
+          <div class="menu-list" id="special-list"></div>
+        </section>
+
+        <section class="menu-section" id="ribs">
+          <header class="section-title"><span>Sporcarsi le mani è concesso</span><h2>Ribs</h2><i></i></header>
+          <div class="ribs-card"><div><span>La specialità della casa</span><h3>Pork Ribs</h3><p>Ribs di maiale con contorno di patatine fritte.</p></div><strong>15€</strong></div>
+          <aside class="meat-note"><b>Carne ottima, scelta con cura.</b><p>Per tagli, provenienza e disponibilità della serata chiedi al personale: ti consigliamo anche la cottura.</p></aside>
+        </section>
+
+        <section class="menu-section" id="fritti">
+          <header class="section-title"><span>Da condividere, forse</span><h2>Fritti & contorni</h2><i></i></header>
+          <figure class="section-photo photo-left"><img src="fried-pulled.jpg" alt="Fried pulled BeerBQ" loading="lazy"><figcaption>Fried pulled homemade</figcaption></figure>
+          <div class="menu-list" id="fritti-list"></div>
+        </section>
+
+        <section class="menu-section" id="dessert">
+          <header class="section-title"><span>Lascia un po' di spazio</span><h2>Dessert</h2><i></i></header>
+          <aside class="dessert-callout">
+            <span>Fatti qui, finiti qui</span>
+            <h3>C'è sempre spazio<br>per il dolce.</h3>
+            <p>Dal nostro Birramisù alla stout ai pangoccioli: il finale della serata si sceglie con calma.</p>
+          </aside>
+          <div class="menu-list" id="dessert-list"></div>
+        </section>
+
+        <section class="menu-section" id="bevande">
+          <header class="section-title"><span>La compagna della carne</span><h2>Da bere</h2><i></i></header>
+          <div class="beer-callout"><span>Le artigianali cambiano</span><h3>Guarda il frigo.<br>Chiedi a noi.</h3><p>Abbiamo una vasta scelta di birre artigianali. Raccontaci cosa ti piace e troviamo quella giusta.</p></div>
+          <div class="menu-list" id="bevande-list"></div>
+        </section>
+      </div>
+    </div>
+
+    <section class="practical">
+      <div><span>01</span><h3>Allergie?</h3><p>Comunicale sempre al personale prima di ordinare.</p></div>
+      <div><span>02</span><h3>Senza glutine?</h3><p>Chiedi al personale le disponibilità della serata.</p></div>
+      <div><span>03</span><h3>Un consiglio?</h3><p>Su carne e birra, siamo qui apposta.</p></div>
+    </section>
+  </main>
+
+  <a class="back-to-index" href="#indice" aria-label="Torna all'indice del menu"><span>↑</span> Indice</a>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Anteprima foto prodotto">
+    <button class="lightbox-close" type="button" aria-label="Chiudi anteprima">×</button>
+    <img src="" alt="">
+    <p></p>
+  </div>
+
+  <footer>
+    <img src="beerbq-logo.png" alt="BeerBQ">
+    <p>Vicolo II Gramsci, 13 · Nova Siri MT</p>
+    <a href="tel:+393338765432">+39 333 876 5432</a>
+    <small>Prezzi espressi in euro · Chiedere al personale per allergeni e disponibilità</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
