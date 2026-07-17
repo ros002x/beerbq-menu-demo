@@ -135,7 +135,7 @@ function openLightbox(image) {
   lightboxClose.focus();
 }
 
-document.querySelectorAll(".food-showcase img, .section-photo img, .ribs-board img, .menu-item img").forEach(image => {
+document.querySelectorAll(".food-showcase img, .section-photo img, .ribs-photo img, .menu-item img").forEach(image => {
   image.tabIndex = 0;
   image.setAttribute("role", "button");
   image.setAttribute("aria-label", `Apri anteprima: ${image.alt}`);
