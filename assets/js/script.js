@@ -1,4 +1,4 @@
-const menu = {
+﻿const menu = {
   antipasti: [
     ["Bombette", "Spiedino da 3 pezzi. Gusti: gorgonzola, pere e noci; gorgonzola e speck; chiedi le altre disponibilità.", "4€"],
     ["Bombette al piatto", "Bombette di vitello speziate avvolte in pancetta, cheddar e patatine.", "5€"],
@@ -59,24 +59,24 @@ const menu = {
 };
 
 const itemImages = {
-  "Bombette": "bombette.jpg",
-  "Bombette al piatto": "bombette-piatto.jpg",
-  "Classic": "classic.jpg",
-  "Cheeseburger": "cheeseburger.jpg",
-  "Calabria": "calabria.jpg",
-  "Hiroshima": "hiroshima.jpg",
-  "Los Pollos Hermanos": "los-pollos.jpg",
-  "Pulled": "pulled.jpg",
-  "George": "george.png",
-  "Saw": "saw.jpg",
-  "Bacon Crispy": "bacon-crispy.jpg",
-  "Toro Seduto": "toro-seduto.jpg",
-  "Bacon Beef": "bacon-beef.jpg",
-  "Fried pulled": "fried-pulled.jpg",
-  "Patatine fritte": "patatine.jpg",
-  "Patatine cheddar & bacon": "patatine-bacon.jpg",
-  "Patatine pulled pork": "patatine-pulled.jpg",
-  "Birramisù": "birramisu.jpg"
+  "Bombette": "assets/images/bombette.jpg",
+  "Bombette al piatto": "assets/images/bombette-piatto.jpg",
+  "Classic": "assets/images/classic.jpg",
+  "Cheeseburger": "assets/images/cheeseburger.jpg",
+  "Calabria": "assets/images/calabria.jpg",
+  "Hiroshima": "assets/images/hiroshima.jpg",
+  "Los Pollos Hermanos": "assets/images/los-pollos.jpg",
+  "Pulled": "assets/images/pulled.jpg",
+  "George": "assets/images/george.png",
+  "Saw": "assets/images/saw.jpg",
+  "Bacon Crispy": "assets/images/bacon-crispy.jpg",
+  "Toro Seduto": "assets/images/toro-seduto.jpg",
+  "Bacon Beef": "assets/images/bacon-beef.jpg",
+  "Fried pulled": "assets/images/fried-pulled.jpg",
+  "Patatine fritte": "assets/images/patatine.jpg",
+  "Patatine cheddar & bacon": "assets/images/patatine-bacon.jpg",
+  "Patatine pulled pork": "assets/images/patatine-pulled.jpg",
+  "Birramisù": "assets/images/birramisu.jpg"
 };
 
 function render(section) {
@@ -132,3 +132,4 @@ lightbox.addEventListener("click", event => {
 document.addEventListener("keydown", event => {
   if (event.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
 });
+
