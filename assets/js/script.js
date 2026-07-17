@@ -61,6 +61,7 @@
 const itemImages = {
   "Bombette": "assets/images/bombette.jpg",
   "Bombette al piatto": "assets/images/bombette-piatto.jpg",
+  "Carpaccio": "assets/images/carpaccio.jpg",
   "Classic": "assets/images/classic.jpg",
   "Cheeseburger": "assets/images/cheeseburger.jpg",
   "Calabria": "assets/images/calabria.jpg",
@@ -68,26 +69,48 @@ const itemImages = {
   "Los Pollos Hermanos": "assets/images/los-pollos.jpg",
   "Pulled": "assets/images/pulled.jpg",
   "George": "assets/images/george.png",
+  "Baby": "assets/images/baby.jpg",
+  "Hamburger al piatto": "assets/images/hamburger-piatto.jpg",
+  "Pulled pork al piatto": "assets/images/pulled-piatto.jpg",
   "Saw": "assets/images/saw.jpg",
+  "Double Cheeseburger": "assets/images/cheeseburger.jpg",
   "Bacon Crispy": "assets/images/bacon-crispy.jpg",
+  "BeerBQ": "assets/images/beerbq.jpg",
+  "Bacon Crispy 2.0": "assets/images/bacon-crispy-2.jpg",
   "Toro Seduto": "assets/images/toro-seduto.jpg",
   "Bacon Beef": "assets/images/bacon-beef.jpg",
+  "Crocchette speck e brie": "assets/images/crocchette-speck-brie.jpg",
+  "Jalapeño cheese": "assets/images/jalapeno-cheese.jpg",
   "Fried pulled": "assets/images/fried-pulled.jpg",
+  "Verdure pastellate": "assets/images/verdure-pastellate.jpg",
   "Patatine fritte": "assets/images/patatine.jpg",
+  "Patatine al pepe": "assets/images/patatine-pepe.jpg",
   "Patatine cheddar & bacon": "assets/images/patatine-bacon.jpg",
   "Patatine pulled pork": "assets/images/patatine-pulled.jpg",
-  "Birramisù": "assets/images/birramisu.jpg"
+  "Stick di pollo": "assets/images/stick-pollo.jpg",
+  "Onion rings": "assets/images/onion-rings.jpg",
+  "Peperoni cruschi": "assets/images/peperoni-cruschi.jpg",
+  "Melanzane alla griglia": "assets/images/melanzane.jpg",
+  "Patate al forno": "assets/images/patate-forno.jpg",
+  "Birramisù": "assets/images/birramisu.jpg",
+  "Pangocciolo Kinder Bueno": "assets/images/pangocciolo-kinder-bueno.jpg",
+  "Pangocciolo Kinder Maxi": "assets/images/pangocciolo-kinder-maxi.jpg"
 };
 
 function render(section) {
   const node = document.querySelector(`#${section}-list`);
   if (!node) return;
-  node.innerHTML = menu[section].map(([name, description, price]) => `
-    <article class="menu-item${itemImages[name] ? " has-image" : ""}">
-      ${itemImages[name] ? `<img src="${itemImages[name]}" alt="${name} BeerBQ" loading="lazy">` : ""}
+  node.innerHTML = menu[section].map(([name, description, price]) => {
+    const image = itemImages[name];
+    const showPlaceholder = !image && section !== "bevande";
+    return `
+    <article class="menu-item${image ? " has-image" : ""}${showPlaceholder ? " missing-image" : ""}">
+      ${image ? `<img src="${image}" alt="${name} BeerBQ" loading="lazy">` : ""}
+      ${showPlaceholder ? `<span class="photo-placeholder" aria-hidden="true">Foto<br>in arrivo</span>` : ""}
       <h3>${name}</h3><span class="dots"></span><strong>${price}</strong>
       ${description ? `<p>${description}</p>` : ""}
-    </article>`).join("");
+    </article>`;
+  }).join("");
 }
 Object.keys(menu).forEach(render);
 
@@ -132,4 +155,6 @@ lightbox.addEventListener("click", event => {
 document.addEventListener("keydown", event => {
   if (event.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
 });
+
+
 
